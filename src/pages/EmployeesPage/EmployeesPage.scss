@@ -1,0 +1,30 @@
+.employees-card {
+  background-color: #edf2f5;
+}
+
+.employees-list {
+  overflow: scroll;
+  max-height: 400px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 40px;
+
+  span {
+    font-size: 50px;
+    color: rgb(255 158 38);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    background: rgb(255 158 38);
+    height: 3px;
+    bottom: -10px;
+    left: 0;
+  }
+}
