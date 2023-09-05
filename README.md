@@ -1,1 +1,1 @@
-#### Test project pizza-list-app (React + Vite)
+### Test project pizza-list-app (React + Vite)
