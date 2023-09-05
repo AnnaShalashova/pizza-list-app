@@ -1,16 +1,16 @@
 .header {
-    width: 100%;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    position: sticky !important;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    background-color: var(--surface-alpha);
-    img {
-        cursor: url('/src/assets/svg/cursor_active.png'), auto !important;
-    }
-    a {
-        width: max-content;
-    }
+  width: 100%;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  position: sticky !important;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: var(--surface-alpha);
+  img {
+    cursor: url('/src/assets/svg/cursor_active.png'), auto !important;
+  }
+  a {
+    width: max-content;
+  }
 }

@@ -7,7 +7,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {store} from './redux/store.jsx';
+import { store } from './redux/store.jsx';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import ErrorBoundary from './containers/ErrorBoundry/ErrorBoundry.jsx';
@@ -25,10 +25,8 @@ const theme = createTheme({
 });
 
 async function initApp() {
-  if (import.meta.env.DEV) {
-    const { worker } = await import('../mocks/server/browser.js');
-    await worker.start()
-  }
+  const { worker } = await import('../mocks/server/browser.js');
+  await worker.start();
 }
 
 initApp().then(() => {
@@ -37,15 +35,12 @@ initApp().then(() => {
       <ErrorBoundary>
         <Provider store={store}>
           <ThemeProvider theme={theme}>
-            <BrowserRouter>   
-                <App /> 
+            <BrowserRouter>
+              <App />
             </BrowserRouter>
           </ThemeProvider>
         </Provider>
-       </ErrorBoundary>
+      </ErrorBoundary>
     </React.StrictMode>,
-  )
-})
-
-
-
+  );
+});

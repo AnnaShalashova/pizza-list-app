@@ -7,10 +7,12 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #EAE6E5;
+  background-color: #eae6e5;
   cursor: url('/src/assets/svg/cursor.png'), auto !important;
 
-  a, button, input {
+  a,
+  button,
+  input {
     cursor: url('/src/assets/svg/cursor_active.png'), auto !important;
   }
 

@@ -1,3 +1,3 @@
-import EmployerDetailsPage from "./EmployerDetailsPage";
+import EmployerDetailsPage from './EmployerDetailsPage';
 
 export default EmployerDetailsPage;

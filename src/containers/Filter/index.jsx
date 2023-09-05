@@ -8,7 +8,7 @@ import Select from '@mui/material/Select';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { Fragment } from 'react';
-import "./Filter.scss";
+import './Filter.scss';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -29,8 +29,10 @@ export default function Filter() {
 
   return (
     <Fragment>
-      <FormControl sx={{ width: 150, 'margin-left': 'auto' }} >
-        <InputLabel id="demo-multiple-name-label" sx={{'top': '-5px'}}>Должность</InputLabel>
+      <FormControl sx={{ width: 150, 'margin-left': 'auto' }}>
+        <InputLabel id="demo-multiple-name-label" sx={{ top: '-5px' }}>
+          Должность
+        </InputLabel>
         <Select
           labelId="demo-multiple-name-label"
           id="demo-multiple-name"
@@ -40,28 +42,26 @@ export default function Filter() {
           input={<OutlinedInput label="Должность" />}
           MenuProps={MenuProps}
         >
-          {roles.length && roles.map((role) => (
-            <MenuItem
-              key={role}
-              value={role}
-            >
-              {role}
-            </MenuItem>
-          ))}
-          <MenuItem key="All" value=''>
+          {roles.length &&
+            roles.map((role) => (
+              <MenuItem key={role} value={role}>
+                {role}
+              </MenuItem>
+            ))}
+          <MenuItem key="All" value="">
             Все должности
           </MenuItem>
         </Select>
-        
       </FormControl>
-        <FormControlLabel
-            name="isArchive"
-            sx={{ 'margin-left': '30px' }}
-            control={<Checkbox size="small" />}
-            label="в архиве"
-            checked={isArchive}
-            onChange={() => dispatch(setFilter({ isArchive: !isArchive }))}
-        />
+      <FormControlLabel
+        name="isArchive"
+        sx={{ 'margin-left': '30px' }}
+        control={<Checkbox size="small" />}
+        label="в архиве"
+        checked={isArchive}
+        onChange={() => dispatch(setFilter({ isArchive: !isArchive }))}
+      />
+      <Fragment></Fragment>
     </Fragment>
   );
 }
