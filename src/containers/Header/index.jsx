@@ -9,7 +9,7 @@ const Header = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/">
-            <img src={Logo} alt="logo" width="170"></img>
+            <img src={Logo} className="logo" alt="logo" width="170"></img>
           </Link>
         </Toolbar>
       </Container>
