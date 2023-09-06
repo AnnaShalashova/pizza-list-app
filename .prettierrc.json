@@ -1,8 +1,9 @@
 {
-  "bracketSpacing": true,
-  "jsxBracketSameLine": false,
+  "semi": true,
+  "tabWidth": 2,
+  "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "all",
-  "printWidth": 120,
-  "ignorePath": [".gitignore"]
+  "jsxSingleQuote": true,
+  "bracketSpacing": true
 }
